@@ -32,18 +32,18 @@
       </ng-container>
     </div>
   </div>
-  <div class="buttons">
-    <pa-button
-      *ngIf="isBillingEnabled | async"
-      kind="primary"
-      [routerLink]="upgradeUrl | async">
-      {{ 'billing.upgrade' | translate }}
-    </pa-button>
-    <pa-button
-      *ngIf="canExtendTrial | async"
-      aspect="basic"
-      (click)="contact()">
-      {{ 'account.extend_trial' | translate }}
-    </pa-button>
-  </div>
+<!--  <div class="buttons">-->
+<!--    <pa-button-->
+<!--      *ngIf="isBillingEnabled | async"-->
+<!--      kind="primary"-->
+<!--      [routerLink]="upgradeUrl | async">-->
+<!--      {{ 'billing.upgrade' | translate }}-->
+<!--    </pa-button>-->
+<!--    <pa-button-->
+<!--      *ngIf="canExtendTrial | async"-->
+<!--      aspect="basic"-->
+<!--      (click)="contact()">-->
+<!--      {{ 'account.extend_trial' | translate }}-->
+<!--    </pa-button>-->
+<!--  </div>-->
 </div>

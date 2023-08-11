@@ -3,7 +3,7 @@
     class="topbar-logo"
     (click)="goToHome()">
     <img
-      [src]="!standalone ? 'assets/logos/logo.svg' : 'assets/logos/nucliadb.svg'"
+      [src]="!standalone ? 'https://shocklogic.com/wp-content/uploads/2021/03/NewSLlogo.png' : 'https://shocklogic.com/wp-content/uploads/2021/03/NewSLlogo.png'"
       class="topbar-logo-expanded"
       [alt]="!standalone ? 'Nuclia' : 'NucliaDB'" />
     <img
@@ -33,7 +33,7 @@
       <strong>{{ (kb | async)?.account }}</strong>
     </div>
 
-    <app-kb-switch></app-kb-switch>
+<!--    <app-kb-switch></app-kb-switch>-->
 
     <app-user-menu
       *ngIf="!standalone"

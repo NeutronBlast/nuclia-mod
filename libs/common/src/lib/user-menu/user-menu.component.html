@@ -4,45 +4,45 @@
   [paPopup]="userMenu"></pa-avatar>
 
 <pa-dropdown #userMenu>
-  <pa-option
-    icon="user"
-    (click)="goProfile()">
-    {{ 'generic.user_preferences' | translate }}
-  </pa-option>
-  <ng-container *ngIf="(isBillingEnabled | async) && (isAccountManager | async)">
-    <pa-separator></pa-separator>
-    <pa-option
-      icon="payment"
-      (click)="goToBilling()">
-      {{ 'account.billing' | translate }}
-    </pa-option>
-  </ng-container>
+<!--  <pa-option-->
+<!--    icon="user"-->
+<!--    (click)="goProfile()">-->
+<!--    {{ 'generic.user_preferences' | translate }}-->
+<!--  </pa-option>-->
+<!--  <ng-container *ngIf="(isBillingEnabled | async) && (isAccountManager | async)">-->
+<!--    <pa-separator></pa-separator>-->
+<!--    <pa-option-->
+<!--      icon="payment"-->
+<!--      (click)="goToBilling()">-->
+<!--      {{ 'account.billing' | translate }}-->
+<!--    </pa-option>-->
+<!--  </ng-container>-->
 
-  <ng-container *ngIf="accounts.length > 1 || standalone">
-    <pa-separator></pa-separator>
-    <pa-option
-      icon="reload"
-      (click)="switchAccount()">
-      {{ 'generic.switch_account' | translate }}
-    </pa-option>
-  </ng-container>
+<!--  <ng-container *ngIf="accounts.length > 1 || standalone">-->
+<!--    <pa-separator></pa-separator>-->
+<!--    <pa-option-->
+<!--      icon="reload"-->
+<!--      (click)="switchAccount()">-->
+<!--      {{ 'generic.switch_account' | translate }}-->
+<!--    </pa-option>-->
+<!--  </ng-container>-->
 
-  <ng-container *ngIf="(hasOwnAccount | async) === false">
-    <pa-separator></pa-separator>
-    <pa-option
-      icon="account"
-      (click)="createAccount()">
-      {{ 'generic.create_account' | translate }}
-    </pa-option>
-  </ng-container>
+<!--  <ng-container *ngIf="(hasOwnAccount | async) === false">-->
+<!--    <pa-separator></pa-separator>-->
+<!--    <pa-option-->
+<!--      icon="account"-->
+<!--      (click)="createAccount()">-->
+<!--      {{ 'generic.create_account' | translate }}-->
+<!--    </pa-option>-->
+<!--  </ng-container>-->
 
-  <pa-separator></pa-separator>
-  <pa-option
-    icon="warning"
-    (click)="goToSupport()">
-    {{ 'generic.report_bug' | translate }}
-  </pa-option>
-  <pa-separator></pa-separator>
+<!--  <pa-separator></pa-separator>-->
+<!--  <pa-option-->
+<!--    icon="warning"-->
+<!--    (click)="goToSupport()">-->
+<!--    {{ 'generic.report_bug' | translate }}-->
+<!--  </pa-option>-->
+<!--  <pa-separator></pa-separator>-->
   <pa-option
     icon="log-out"
     (click)="logout()">
