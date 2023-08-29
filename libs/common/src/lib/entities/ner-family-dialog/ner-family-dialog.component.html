@@ -16,15 +16,15 @@
         {{ 'ner-family-dialog.family-color' | translate }}
       </pa-input>
 
-      <div class="upload-csv-container">
-        <strong>{{ 'ner-family-dialog.upload-csv-title' | translate }}</strong>
-        <app-csv-select
-          buttonKind="secondary"
-          [help]="['ner-family-dialog.upload-csv-format']"
-          [fields]="1"
-          [confirmData]="confirmCsv"
-          (select)="uploadCsv($event)"></app-csv-select>
-      </div>
+<!--      <div class="upload-csv-container">-->
+<!--        <strong>{{ 'ner-family-dialog.upload-csv-title' | translate }}</strong>-->
+<!--        <app-csv-select-->
+<!--          buttonKind="secondary"-->
+<!--          [help]="['ner-family-dialog.upload-csv-format']"-->
+<!--          [fields]="1"-->
+<!--          [confirmData]="confirmCsv"-->
+<!--          (select)="uploadCsv($event)"></app-csv-select>-->
+<!--      </div>-->
 
       <div class="separator">{{ 'generic.or' | translate }}</div>
 
