@@ -45,13 +45,13 @@
             </a>
           </ng-container>
 
-<!--          <a-->
-<!--            [routerLink]="kbUrl + '/label-sets'"-->
-<!--            routerLinkActive="active"-->
-<!--            class="nav-link">-->
-<!--            <pa-icon name="label"></pa-icon>-->
-<!--            <span class="nav-link-title">{{ 'stash.side.classification' | translate }}</span>-->
-<!--          </a>-->
+          <a
+            [routerLink]="kbUrl + '/label-sets'"
+            routerLinkActive="active"
+            class="nav-link">
+            <pa-icon name="label"></pa-icon>
+            <span class="nav-link-title">{{ 'stash.side.classification' | translate }}</span>
+          </a>
           <a
             *ngIf="isEntitiesEnabled | async"
             [routerLink]="[kbUrl + '/entities']"
